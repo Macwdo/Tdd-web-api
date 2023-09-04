@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddWebApi", "TddWebApi\TddWebApi.csproj", "{346713E9-7E30-4BC1-A682-76C90243ED85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddWebApi.UnitTests", "TddWebApi.UnitTests\TddWebApi.UnitTests.csproj", "{D7A04DEB-1553-496A-B47A-E55EA421162C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,7 +13,11 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{346713E9-7E30-4BC1-A682-76C90243ED85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{346713E9-7E30-4BC1-A682-76C90243ED85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{346713E9-7E30-4BC1-A682-76C90243ED85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346713E9-7E30-4BC1-A682-76C90243ED85}.Releas5e|Any CPU.ActiveCfg = Release|Any CPU
 		{346713E9-7E30-4BC1-A682-76C90243ED85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7A04DEB-1553-496A-B47A-E55EA421162C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A04DEB-1553-496A-B47A-E55EA421162C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A04DEB-1553-496A-B47A-E55EA421162C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A04DEB-1553-496A-B47A-E55EA421162C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
