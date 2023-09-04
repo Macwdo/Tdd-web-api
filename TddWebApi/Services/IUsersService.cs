@@ -2,7 +2,7 @@ using TddWebApi.Models;
 
 namespace TddWebApi.Services;
 
-public interface IUserService
+public interface IUsersService
 {
     Task<IEnumerable<User>> GetAllUsers();
 }

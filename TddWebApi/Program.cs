@@ -1,10 +1,14 @@
+using TddWebApi.Configs;
 using TddWebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddTransient<IUserService, UsersService>();
+builder.Services.Configure<UsersApiOptions>(builder.Configuration.GetSection("UsersApiOptions"));
+builder.Services.AddTransient<IUsersService, UsersService>();
+builder.Services.AddHttpClient<IUsersService, UsersService>();
+
 
 // void ConfigureServices(IServiceCollection services)
 // {

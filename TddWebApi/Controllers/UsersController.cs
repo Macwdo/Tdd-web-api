@@ -7,17 +7,17 @@ namespace TddWebApi.Controllers;
 [Route("[controller]")]
 public class UsersController : ControllerBase
 {
-    private readonly IUserService _userService;
+    private readonly IUsersService _usersService;
 
-    public UsersController(IUserService userService)
+    public UsersController(IUsersService usersService)
     {
-        _userService = userService;
+        _usersService = usersService;
     }
 
     [HttpGet(Name = "GetUsers")]
     public async Task<IActionResult> Get()
     {
-        var users = await _userService.GetAllUsers();
+        var users = await _usersService.GetAllUsers();
         if (!users.Any()) return NotFound();
         return Ok(users);
     }
