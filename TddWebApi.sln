@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddWebApi", "TddWebApi\TddWebApi.csproj", "{346713E9-7E30-4BC1-A682-76C90243ED85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddWebApi.UnitTests", "TddWebApi.UnitTests\TddWebApi.UnitTests.csproj", "{D7A04DEB-1553-496A-B47A-E55EA421162C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TddWebApi.Tests", "TddWebApi.Tests\TddWebApi.Tests.csproj", "{67E191B5-3B73-43E6-9D26-D3BAF6588F5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +19,9 @@ Global
 		{D7A04DEB-1553-496A-B47A-E55EA421162C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7A04DEB-1553-496A-B47A-E55EA421162C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7A04DEB-1553-496A-B47A-E55EA421162C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E191B5-3B73-43E6-9D26-D3BAF6588F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E191B5-3B73-43E6-9D26-D3BAF6588F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E191B5-3B73-43E6-9D26-D3BAF6588F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E191B5-3B73-43E6-9D26-D3BAF6588F5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
