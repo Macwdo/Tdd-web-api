@@ -26,4 +26,8 @@
     <ProjectReference Include="..\TddWebApi\TddWebApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Unit\" />
+  </ItemGroup>
+
 </Project>
