@@ -2,7 +2,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
+using TddWebApi.Services.Users;
 using Xunit;
 
 namespace TddWebApi.Tests.Fixtures;
@@ -19,6 +19,7 @@ public class WebApplicationFixture: IAsyncLifetime
         {
             builder.ConfigureServices(services =>
             {
+                services.AddScoped<IUsersService, UsersService>();
                 // You can configure your DI here
                 // For example you can remove your DbContextOptions and add a new one
 

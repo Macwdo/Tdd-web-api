@@ -1,5 +1,4 @@
 using TddWebApi.Models;
-using TddWebApi.Services.Users.Exceptions;
 
 namespace TddWebApi.Services.Users;
 public class UsersService: IUsersService
@@ -13,18 +12,17 @@ public class UsersService: IUsersService
         _logger = logger;
     }
 
-    public async Task<IEnumerable<User>> GetAllUsers()
+    public async Task<IEnumerable<User>> GetUsers()
     {
         try 
         {
-            var users = await _usersApi.GetUsers();
+            var users = await _usersApi.GetAllUsers();
             return users;
         } 
         catch (Exception) 
         {
-            const string ErrorMessage = "Error trying to get users.";
-            _logger.LogError(ErrorMessage);
-            throw new GetUsersException(ErrorMessage);
+            _logger.LogError("Error trying to get users.");
+            throw;
         }
         
     }
@@ -34,17 +32,14 @@ public class UsersService: IUsersService
         try 
         {
             var user = await _usersApi.GetUser(id);
-            if (user == null) {
-                _logger.LogWarning($"User by id {id} not found");
-                return null;
-            }
-            return user;
+            if (user != null) return user;
+            _logger.LogWarning($"User by id {id} not found");
+            return null;
         } 
         catch (Exception) 
         {
-            var errorMessage = $"Error trying to get user by id {id}";
-            _logger.LogError(errorMessage);
-            throw new GetUsersException(errorMessage);
+            _logger.LogError($"Error trying to get user by id {id}");
+            throw;
         }
     }
 }

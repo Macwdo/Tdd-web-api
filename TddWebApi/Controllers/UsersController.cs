@@ -21,7 +21,7 @@ public class UsersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status500InternalServerError, Type = typeof(ProblemDetails))]
     public async Task<IActionResult> Get()
     {
-        var users = await _usersService.GetAllUsers();
+        var users = await _usersService.GetUsers();
         if (!users.Any()) return NotFound();
         return Ok(users);
     }

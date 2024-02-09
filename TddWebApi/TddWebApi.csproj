@@ -13,6 +13,11 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="TddWebApi.Tests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="TddWebApi.Tests\obj\TddWebApi.Tests.csproj.nuget.dgspec.json" />
+    </ItemGroup>
+
 
 
 
